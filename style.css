@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body{
+    background: url(images/bg-desktop.svg) #674BB2;
+}
+
+nav{
+    margin-top: 40px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 70vh;
+}
+
+.holder{
+    margin-top: 40px;
+    display: flex;
+    gap: 50px;
+} 
+
+.mainCont img{
+    width: 700px;
+}
+
+.headingCont{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.headingCont h1, p{
+    color: #fff;
+}
+
+.headingCont h1{
+    line-height: 45px;
+}
+
+.headingCont p{
+    line-height: 25px;
+}
+
+button{
+    width: 150px;
+    color: #674BB2;
+    padding: 13px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: background ease-in-out 300ms;
+}
+
+button:hover{
+    background-color: #7d6ab1;
+    color: #fff;
+}
+
+footer i{
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    left: 1250px;
+    transition: background ease-in-out 300ms;
+}
+
+
+footer i:hover{
+    background-color: black;
+    color: #fff;
+}
+
+/* FOR MINI TABLETS */
+
+@media (min-width: 481px) and (max-width:768px){
+
+    .container{
+        max-width: 95%;
+    }
+
+    .mainCont img{
+        width: 360px;
+    }
+
+    .headingCont{
+        margin-top: 20px;
+        gap: 10px;
+       
+    }
+
+    .headingCont h1{
+        font-weight: 900;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .headingCont p{
+        font-size: 16px;
+    }
+
+    footer i{
+        left: 600px;
+    }
+
+}
+
+/* FOR SMALL SCREENS */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+    .container{
+        max-width: 95%;
+    }
+    .mainCont img{
+        width: 500px;
+    }
+
+    .headingCont{
+        gap: 10px;
+        margin-top: 40px;
+    }
+
+    .headingCont h1{
+        font-weight: 900;
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .headingCont p{
+        font-size: 18px;
+    }
+
+    button{
+        font-size: 15px;
+    }
+
+    footer i{
+        /* margin-top: 50px; */
+        left: 860px;
+        font-size: 20px;
+    }
+
+}
+
+/* FOR LARGE SCREENS */
+
+/* @media (min-width: 1025px) and (max-width: 1200px) {
+    
+    .container{
+        max-width: 95%;
+    }
+    .mainCont img{
+        width: 700px;
+    }
+
+    .headingCont{
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .headingCont h1{
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .headingCont p{
+        font-size: 17px;
+    }
+
+    footer i{
+        display: none;
+    }
+
+}  */
+
+/* FOR MOBILE */
+
+@media (min-width:320px) and (max-width: 480px) {
+
+     /* .container{
+        height: 40vh;
+    } */
+
+    .mainCont img{
+        width: 350px;
+    }
+
+    nav{
+        margin-top: 40px;
+        margin-left: 45px;
+        max-width: 90%;
+
+    }
+    .holder{
+        max-width: 90%;
+        margin: 0 auto;
+        margin-top: 70px;
+        display: flex;
+        gap: 20px;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .headingCont{
+        align-items: center;
+    }
+
+    .headingCont h1{
+        font-weight: 900;
+        font-size: 30px;
+    }
+
+    .headingCont p{
+        text-align: center;
+        font-size: 17px;
+    }
+
+    button{
+        width: 170px;
+        font-size: 15px;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    footer i{
+       left: 0px;
+       margin-inline: 5px;
+       margin-top: 150px;
+    }   
+}
+
+/* @media (max-width: 375px) {
+    .container{
+        max-width: 70%;
+    }
+} */
